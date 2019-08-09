@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playground</title>
+    <meta name="description" content="Playground">
+    <style>
+        .container{
+            width:1000px;
+            height:autopx;
+            margin-left:400px;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .blue_box{
+            background-color: #9fc5f8;
+            display: inline-block;
+            height:200px;
+            width: 200px; 
+            border-style: solid;
+            margin-left:20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="container">
+        {% for x in range(0,times) %}
+        <div class="blue_box" style="background-color: {{color}}">  </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
